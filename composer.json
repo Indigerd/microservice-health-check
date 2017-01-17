@@ -1,0 +1,28 @@
+{
+  "name": "templatemonster/healthchecks",
+  "description": "HTTP and console health checks for microservices",
+  "keywords": ["rest", "yii2", "microservices", "api"],
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Stepanenko",
+      "email": "alex.stepanenko@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "indigerd\\rest\\": "src/rest"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "templatemonster\\healthchecks\\": "src/healthchecks"
+    }
+  },
+  "require": {
+    "php": ">=5.5.0",
+    "yiisoft/yii2": "*",
+    "indigerd/yii2-rest": "*"
+  }
+}
