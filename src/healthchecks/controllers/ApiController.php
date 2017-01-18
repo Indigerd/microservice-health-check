@@ -11,6 +11,8 @@ use indigerd\rest\Controller;
 
 class ApiController extends Controller
 {
+    public $modelClass = 'templatemonster\healthchecks\models\HealthCheck';
+
     public function behaviors()
     {
         $behaviors = parent::behaviors();

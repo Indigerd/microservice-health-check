@@ -7,6 +7,7 @@
 namespace templatemonster\healthchecks;
 
 use Yii;
+use templatemonster\healthchecks\models\HealthCheck;
 
 class Module extends \yii\base\Module
 {
@@ -49,7 +50,10 @@ class Module extends \yii\base\Module
             if (!$check) {
                 $this->health = false;
             }
-            $result[$name] = $check;
+            $model = new HealthCheck;
+            $model->name = $name;
+            $model->passed = $check;
+            $result[] = $model;
         }
         return $result;
     }
