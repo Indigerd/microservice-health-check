@@ -1,5 +1,5 @@
 {
-  "name": "templatemonster/healthchecks",
+  "name": "indigerd/healthchecks",
   "description": "HTTP and console health checks for microservices",
   "keywords": ["rest", "yii2", "microservices", "api"],
   "type": "package",
