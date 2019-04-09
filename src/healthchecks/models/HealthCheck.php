@@ -1,10 +1,10 @@
 <?php
 /**
  * @author Alexander Stepanenko <alex.stepanenko@gmail.com>
- * @package templatemonster\healthchecks
+ * @package indigerd\healthchecks
  */
 
-namespace templatemonster\healthchecks\models;
+namespace indigerd\healthchecks\models;
 
 use yii\base\Model;
 

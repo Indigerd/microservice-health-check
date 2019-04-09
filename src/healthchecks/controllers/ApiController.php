@@ -1,17 +1,17 @@
 <?php
 /**
  * @author Alexander Stepanenko <alex.stepanenko@gmail.com>
- * @package templatemonster\healthchecks
+ * @package indigerd\healthchecks
  */
 
-namespace templatemonster\healthchecks\controllers;
+namespace indigerd\healthchecks\controllers;
 
 use Yii;
 use indigerd\rest\Controller;
 
 class ApiController extends Controller
 {
-    public $modelClass = 'templatemonster\healthchecks\models\HealthCheck';
+    public $modelClass = 'indigerd\healthchecks\models\HealthCheck';
 
     public function behaviors()
     {
@@ -33,7 +33,7 @@ class ApiController extends Controller
 
     public function actionIndex()
     {
-        /** @var \templatemonster\healthchecks\Module $module */
+        /** @var \indigerd\healthchecks\Module $module */
         $module = \Yii::$app->getModule(
             isset(\Yii::$app->params['healthChecksModuleName'])
                 ? \Yii::$app->params['healthChecksModuleName']

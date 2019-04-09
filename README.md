@@ -11,7 +11,7 @@ for example
 'modules'=>[
         .........
         'healthchecks' => [
-            'class' => 'templatemonster\healthchecks\Module',
+            'class' => 'indigerd\healthchecks\Module',
             'checks'=> [
                 'db',
                 'cache',

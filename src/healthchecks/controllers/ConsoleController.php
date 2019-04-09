@@ -1,10 +1,10 @@
 <?php
 /**
  * @author Alexander Stepanenko <alex.stepanenko@gmail.com>
- * @package templatemonster\healthchecks
+ * @package indigerd\healthchecks
  */
 
-namespace templatemonster\healthchecks\controllers;
+namespace indigerd\healthchecks\controllers;
 
 use Yii;
 use yii\console\Controller;
@@ -15,7 +15,7 @@ class ConsoleController extends Controller
 
     public function actionIndex()
     {
-        /** @var \templatemonster\healthchecks\Module $module */
+        /** @var \indigerd\healthchecks\Module $module */
         $module = \Yii::$app->getModule(
             isset(\Yii::$app->params['healthChecksModuleName'])
                 ? \Yii::$app->params['healthChecksModuleName']
