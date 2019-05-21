@@ -40,7 +40,7 @@ class ApiController extends Controller
                 : 'healthchecks'
         );
         $result = $module->doHealthChecks();
-        if ($module->getHealth()) {
+        if (!$module->getHealth()) {
             Yii::$app->response->setStatusCode(424);
         }
         return $result;

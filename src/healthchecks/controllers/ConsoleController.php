@@ -23,7 +23,7 @@ class ConsoleController extends Controller
         );
         $result = $module->doHealthChecks();
 
-        if (!$module->getHealth()) {
+        if ($module->getHealth()) {
             return self::EXIT_CODE_NORMAL;
         }
         return self::EXIT_CODE_CONSUL_HEARTBEAT_FAIL;
